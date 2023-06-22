@@ -1,16 +1,16 @@
 version: 2
 
 models:
-  - name: kyberswap_arbitrum_trades
+  - name: level_finance_bnb_trades
     meta:
-      blockchain: arbitrum
+      blockchain: bnb
       sector: dex
-      project: kyberswap
-      contributors: ppclunghe, gregshestakovlido
+      project: level_finance
+      contributors: maybeYonas
     config:
-      tags: ['arbitrum','dex','trades', 'kyberswap', 'ppclunghe', 'gregshestakovlido']
+      tags: ['bnb','dex','trades', 'level_finance', 'maybeYonas']
     description: >
-        Kyberswap trades on Arbitrum across all contracts and versions. This table will load dex trades downstream.
+        Level Finance swaps on Binance Smart Chain across all contracts and versions[Does not included Leverage trades]. This table will load dex trades downstream.
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
@@ -22,9 +22,9 @@ models:
             - evt_index
             - trace_address
       - check_dex_seed:
-          blockchain: arbitrum
-          project: kyberswap
-          version: elastic
+          blockchain: bnb
+          project: level_finance
+          version: 1
     columns:
       - &blockchain
         name: blockchain

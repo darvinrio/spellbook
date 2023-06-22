@@ -3,7 +3,7 @@
 SELECT LOWER(contract_address) as contract_address, symbol, decimals
 FROM (VALUES
         ('0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9', 'USDT', 6)
-        ,('0xff970a61a04b1ca14834a43f5de4533ebddb5cc8', 'USDC', 6)
+        ,('0xff970a61a04b1ca14834a43f5de4533ebddb5cc8', 'USDC.e', 6)
         ,('0xda10009cbd5d07dd0cecc66161fc93d7c9000da1', 'DAI', 18)
         ,('0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f', 'WBTC', 8)
         ,('0xfa7f8980b0f1e64a2062791cc3b0871572f1f7f0', 'UNI', 18)
@@ -120,4 +120,5 @@ FROM (VALUES
         ,('0xd77b108d4f6cefaa0cae9506a934e825becca46e', 'WINR', 18)
         ,('0xd4d026322c88c2d49942a75dff920fcfbc5614c1', 'OLE', 18)
         ,('0xdd69db25f6d620a7bad3023c5d32761d353d3de9', 'GETH', 18)
+        ,('0xaf88d065e77c8cc2239327c5edb3a432268e5831', 'USDC', 6)
      ) AS temp_table (contract_address, symbol, decimals)

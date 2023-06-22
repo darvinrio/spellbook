@@ -1261,8 +1261,8 @@ models:
     thena:
       +schema: thena
       bnb:
-        +schema: thena_bnb
-    
+        +schema: thena_bnb            
+
     account_abstraction:
       erc4337:
         +schema: account_abstraction_erc4337
@@ -1278,3 +1278,9 @@ models:
           +schema: account_abstraction_erc4337_polygon
         gnosis:
           +schema: account_abstraction_erc4337_gnosis
+    level_finance:
+        +schema: level_finance
+        arbitrum:
+          +schema: level_finance_arbitrum
+        bnb:
+          +schema: level_finance_bnb
