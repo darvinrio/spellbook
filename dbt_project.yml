@@ -1261,6 +1261,7 @@ models:
     thena:
       +schema: thena
       bnb:
+        +schema: thena_bnb
         
     level_finance:
         +schema: level_finance
