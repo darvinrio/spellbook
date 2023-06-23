@@ -7,7 +7,7 @@
         )
 }}
 
-{% set pancake_models = [
+{% set level_finance_models_models = [
     ref('level_finance_bnb_trades')
 ,   ref('level_finance_arbitrum_trades')
 ] %}
@@ -15,7 +15,7 @@
 
 SELECT *
 FROM (
-    {% for dex_model in pancake_models %}
+    {% for dex_model in level_finance_models_models %}
     SELECT
         blockchain,
         project,

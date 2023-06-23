@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: level_finance_bnb
-    description: "Binance Smart Chain decoded tables related to Level Finance contract (classic+elastic)"
+    description: "Binance Smart Chain decoded tables related to Level Finance contract"
     freshness: # default freshness
       warn_after: { count: 12, period: hour }
       error_after: { count: 24, period: hour }
